@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.login{
+background:url("https://images.wsj.net/im-194150/M") no-repeat;
+width:600px;
+height:400px;
+background-size:cover;
+background-position:center;
+display:flex;
+border-radius:10px;
+box-shadow:5px 5px 5px;
+overflow:hidden;
+}
+form{
+background:white;
+box-sizing:border-box;
+width:50%;
+padding:40px;
+flex-direction:column;
+display:flex;
+gap:20px;}
+h1{
+font-size:32px;
+margin-bottom:20px;
+text-transform:uppercase;
 
+
+}
+label{
+letter-spacing:1px;
+text-transform:uppercase;
+font-size:14px;
+color:rgb(100,100,100);
+}
+input{
+width:200px;
+border:none;
+border-bottom:2px solid green;
+padding:10px 0px;
+outline:none;
+
+}
+input:focus;{
+border-bottom:2px solid brown;
+}
+button{
+margin-top:20px;
+width:150px;
+background:#333;
+color:white;
+text-transform:uppercase;
+letter-spacing:1px;
+font-weight:bold;
+padding:10px;
+box-shadow:2px 2px 3px lightgreen;
+
+}
+
+
+
+}
+
+</style>
+</head>
+<body>
+<section class="login">
+<form>
+<h1>Log in</h1>
+<div>
+<label>username<label/>
+<input type="text"></input>
+</div>
+<div>
+<label>Password<label/>
+<input type="password"></input>
+</div>
+<button>log in</button>
+</form>
+
+
+
+</section>
+
+</body>
+</html>
