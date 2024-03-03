@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+width:100%;
+color:#FEFEFE;
+overflow-x:hidden;
+}
+
+.scene{
+position:relative;
+height:100vh;
+background-image:url(https://nnmedia.nation.africa/uploads/2019/03/3a253cc3-f6f4-4b03-96a0-6041896ff7e8-1320x740.jpg);
+background-size:cover;
+
+align-items:center;
+display:flex;
+justify-content:center;
+}
+
+.card{
+max-width:300px;
+color:white;
+background:#fefefe13;
+backdrop-filter:blur(10px);
+border:1px solid #fefefe2e ;
+border-radius:15px;
+box-shadow:0 10px 35px 0 #362100a6;
+overflow:hidden;
+padding:20px 30px 50px 30px;
+position:relative;
+text-align:center;
+z-index:1;
+}
+
+.heading{
+font-size:1.35rem;
+font-weight:200;
+margin-bottom:15px;
+}
+
+.figure{
+height:auto;
+margin:0 auto;
+max-width:225px;
+width:60%;
+}
+
+.image{
+border-radius:50%;
+max-width:100%;
+}
+
+.input{
+width:100%;
+background:#fefefe13;
+border:1px solid #fefefe4d;
+box-sizing:border-box;
+color:#FEFEFE;
+display:block;
+font-size:1rem;
+letter-spacing:0.1rem;
+padding:10px;
+}
+
+input:focus{
+background:#fefefe14;
+border:1px solid #fefefebf;
+outline:none;
+}
+
+.button{
+background:#fefefea6;
+border:none;
+border-radius:3px;
+color:#362100;
+margin:15px auto 0 auto;
+padding:8px 20px;
+}
+
+.button:active{
+background:#ffffffbf;
+outline:none;
+}
+
+</style>
+</head>
+<body>
+<div class="scene">
+<section class="card">
+<figure class="figure">
+<img class="image" src="https://images.wsj.net/im-907503"/>
+</figure>
+<h1 class="heading">admin</h1>
+<form class="form">
+<input id="password" class="input" type="password"/>
+<button classs="button" type="button">login</button>
+</form>
+</section>
+</div>
+</body>
+</html>
