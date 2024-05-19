@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3f5f163be8.js" crossorigin="anonymous"></script>
+
+<title>Quick Food</title>
+<style>
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  color:black;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links li a {
+  color:black;
+  text-decoration: none;
+}
+
+.search-button {
+  background-color:#FFA500
+;
+  color: #fff;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.search-button:hover {
+  background-color:#fff
+;
+  color: #FFA500;
+  transition:1s;
+}
+
+.profile-image {
+height:40px;
+  width: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* For circular shape */
+}
+.navbar-logo-food{
+  color:#FFA500
+;
+
+}
+.information{
+margin-top:30px;
+width: 100%;
+   height:70vh;
+
+display:flex;
+}
+.image-information{
+padding: 30px;
+
+width: 50%;
+float:left ;
+}
+.image-information h1{
+text-align:left;
+font-size:30px;
+color:#54461A;
+
+
+}
+
+.image{
+width: 30%;
+  height: auto;
+  
+  float:right;
+  margin: 20px;
+}
+.image img{
+
+width: 300px ;
+
+  height:300px ;
+  border-radius:50% ;
+  
+}
+.button1{
+
+display:block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #FFA500 ;
+    padding:12px 34px;
+    font-size:13px;
+    background:#FFA500;
+    cursor:pointer;
+   border-radius:18px;
+   margin:12px 34px;
+
+}
+.button2{
+display:block;
+    text-decoration: none;
+    color:#FFA500;
+    border:1px solid #FFA500;
+    padding:12px 34px;
+    font-size:13px;
+    background:transparent;
+    cursor:pointer;
+    border-radius:18px;
+       margin:12px 34px;
+
+
+}
+
+
+.button1:hover{
+border:1px solid #FFA500;
+background:transparent;
+transition: 1s;
+color:#FFA500;
+
+}
+.button2:hover{
+border:1px solid #FFA500;
+background:#FFA500;
+transition: 1s;
+color:#fff;
+
+
+}
+   .row{
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin:auto;
+    background:#fff3f3;
+    box-shadow:1px 1px 2px;
+    border-radius:18px;
+
+
+        
+    }
+    .course-col{
+flex-basis: 31%;
+
+border-radius:10px;
+margin-bottom: 5%;
+padding:20px 12px;
+box-sizing:border-box;
+transition:0.5s;
+
+    }
+ .course-col h3{
+text-align:center;
+font-weight:600;
+margin:10px 0;
+
+
+}
+.course-col p{
+text-align:center;
+font-weight:100;
+margin:10px 0;
+
+
+}
+
+
+
+.info1{
+width:50%;
+float:left;
+font-size:12px;
+}
+.info1 h1{
+text-align:center;
+font-weight:600;
+font-family:sariff;
+font-size:20px;
+}
+.info {
+  margin-top: 45px;
+  margin-bottom: 2px;
+  height:300px;
+  width:90%;
+  animation: grow 1s;
+
+
+}
+.info2{
+width:50%;
+float:right;
+font-size:15px;
+text-align:right;
+
+
+}
+.info2 p{
+color:grey;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 600;
+} 
+.roww{
+    display:flex;
+    justify-content:space-between;
+    
+    }
+    
+.facilities{
+margin-top:5%;
+
+    width:80%;
+    margin: auto;
+    text-align:center;
+    padding-top:100px;
+}
+.facilities-col{
+flex-basis:31%;
+border-radius:10px;
+margin-bottom:5%;
+margin-right:5%;
+
+
+}
+.facilities-col img{
+width:200px ;
+height:200px ;
+padding:10px;
+border:4px dotted #FFA500;
+
+
+border-radius:50%;
+}
+.facilities-col p{
+padding:0;
+font-family:serif;
+font-size:20px;
+text-align:center;
+color:#FFA500;
+
+
+
+}
+.facilities-col h3{
+margin-top:16px;
+margin-bottom:15px;
+text-align:center;
+
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-left">
+    <span class="navbar-logo"><span class="navbar-logo-food">Food</span> Dash</span>
+  </div>
+  <ul class="navbar-links">
+    <li><a href="#"><b>Home</b></a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Offers</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+  <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+  <img src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbGUlMjB1bml2ZXJzaXR5JTIwZ3JhZHVhdGV8ZW58MHwxfDB8fHwy" alt="Profile" class="profile-image">
+</div>
+<section class="information">
+ 
+  <div class="image-information">
+    <h1><span class="navbar-logo-food">Quick</span> and <span class="navbar-logo-food">Tasty<br> Food Delivered</span> with <span class="navbar-logo-food">a<br> Dash of</span> Speed </h1>
+    <button class="button1">Order Now</button>
+    <button class="button2"> Track Order</button>
+  </div>
+   <div class="image">
+      <img src="https://images.unsplash.com/photo-1543352634-99a5d50ae78e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="beach-image" width="400" height="300">
+
+  </div>
+  </section>
+  
+  <div class="row">
+<div class="course-col">
+    <h3>Fast Delivery</h3>
+    <p>Promise To Deliver<br> Within 30 Mins</p>
+</div>
+<div class="course-col">
+    <h3>Fresh Food</h3>
+    <p>Your Food will be Delivered<br> 100% Fresh To Your Home</p>
+</div>
+<div class="course-col">
+    <h3>Free Delivery</h3>
+    <p>Your Food Delivery Is<br> Absolutely Free.No Cost Just Order </p>
+</div>
+
+</div>
+
+
+<section class="info">
+<div class="info1">
+
+<h1>Our<span class="navbar-logo-food"> Best Delivered</span><br> Indian Dish</h1>
+</div>
+
+<div class="info2">
+<p> Its Not Just About Bringing You Good Food<br>From Restuarants,We Delivere You Experience</p>
+</section>
+<section class="facilities">
+
+<div class="roww">
+    <div class="facilities-col">
+        <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h3>Indian Vegetable<br> Pulao</h3>
+        <p>Order Now ></p>
+    </div>
+    <div class="facilities-col">
+        <img src="https://images.unsplash.com/photo-1479832912902-77089f02b1d2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h3>Paneer Bhuna<br> Masala</h3>
+        <p>Order Now > </p>
+    </div>
+    <div class="facilities-col">
+        <img src="https://images.unsplash.com/photo-1668724775591-f50dd8ed65a5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <h3>Vermicelli<br> Upma</h3>
+        <p>Order Now ></p>
+    </div>
+    
+
+</section>
+
+
+
+</body>
+</html>
